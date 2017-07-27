@@ -8,9 +8,15 @@
       </ul>
     </div>
   <% end %>
+  
+  <%= f.label :title, 'タイトル' %>
+  <%= f.text_field :title %>
 
   <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
+  
+  <%= f.label :status, 'ステイタス' %>
+  <%= f.text_field :status %>
 
   <%= f.submit '追加' %>
 <% end %>
