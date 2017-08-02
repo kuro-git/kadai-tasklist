@@ -57,3 +57,8 @@ gem 'kaminari'
 
 #デバッガ
 gem 'pry-byebug', group: :development
+
+#Herokuのdb:PostgreSQL 設定
+group :production do
+  gem 'pg'
+end
