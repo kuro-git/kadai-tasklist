@@ -5,7 +5,6 @@
     <thead>
       <tr>
         <th>id</th>
-        <th>タイトル</th>
         <th>メッセージ</th>
         <th>ステイタス</th>
       </tr>
@@ -14,7 +13,6 @@
       <% @tasks.each do |task| %>
         <tr>
           <td><%= link_to task.id, task %></td>
-          <td><%= task.title %></td>
           <td><%= task.content %></td>
           <td><%= task.status %></td>
         </tr>
